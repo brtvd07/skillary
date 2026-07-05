@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Skillary — демонстрационный сайт онлайн-школы с каталогом курсов, тарифами и FAQ.">
+  <title>Skillary — онлайн-школа нового формата</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <p class="demo-label">Демонстрационный проект — компания вымышлена</p>
+  <header class="site-header">
+    <a class="logo" href="#top" aria-label="Skillary, на главную">Skillary<span>.</span></a>
+    <nav aria-label="Основная навигация">
+      <a href="#courses">Курсы</a><a href="#pricing">Тарифы</a><a href="#faq">Вопросы</a>
+    </nav>
+    <a class="button button-small" href="#contact">Бесплатный урок</a>
+  </header>
+  <main id="top">
+    <section class="hero">
+      <div class="eyebrow">Онлайн-обучение нового формата</div>
+      <h1>Новая профессия.<br><em>В своём темпе.</em></h1>
+      <p>Курсы с практикой, менторами и понятной структурой. От первого урока до проекта в портфолио.</p>
+      <div class="hero-actions"><a class="button" href="#courses">Выбрать курс</a><a class="text-link" href="#approach">Как проходит обучение →</a></div>
+      <div class="hero-stats"><div><strong>6</strong><span>практических курсов</span></div><div><strong>1:12</strong><span>ментор на группу</span></div><div><strong>80%</strong><span>обучения — практика</span></div></div>
+    </section>
+
+    <section class="section" id="courses">
+      <header class="section-heading"><div><span class="eyebrow">Каталог</span><h2>Выберите свой маршрут</h2></div><p>Фильтруйте программы по уровню подготовки.</p></header>
+      <div class="filters" aria-label="Фильтр курсов">
+        <button class="filter-btn active" data-level="all" type="button" aria-pressed="true">Все</button>
+        <button class="filter-btn" data-level="beginner" type="button" aria-pressed="false">Новичок</button>
+        <button class="filter-btn" data-level="middle" type="button" aria-pressed="false">Средний</button>
+        <button class="filter-btn" data-level="advanced" type="button" aria-pressed="false">Продвинутый</button>
+      </div>
+      <div class="course-grid">
+        <article class="course-card" data-level="beginner"><span class="course-number">01</span><span class="tag">Новичок</span><h3>Старт в профессии</h3><p>Базовые навыки и первый практический проект за 4 недели.</p><footer><strong>12 900 ₽</strong><a class="course-choice" data-course="Старт в профессии" href="#contact">Подробнее →</a></footer></article>
+        <article class="course-card featured" data-level="middle"><span class="course-number">02</span><span class="tag">Средний</span><h3>Углублённая практика</h3><p>Реальные кейсы и обратная связь от ментора на каждом уроке.</p><footer><strong>18 900 ₽</strong><a class="course-choice" data-course="Углублённая практика" href="#contact">Подробнее →</a></footer></article>
+        <article class="course-card" data-level="advanced"><span class="course-number">03</span><span class="tag">Продвинутый</span><h3>Профессиональный трек</h3><p>Портфолио, собеседования и поддержка после выпуска.</p><footer><strong>27 900 ₽</strong><a class="course-choice" data-course="Профессиональный трек" href="#contact">Подробнее →</a></footer></article>
+        <article class="course-card" data-level="beginner"><span class="course-number">04</span><span class="tag">Новичок</span><h3>Введение в профессию</h3><p>Короткий курс-знакомство перед основной программой.</p><footer><strong>4 900 ₽</strong><a class="course-choice" data-course="Введение в профессию" href="#contact">Подробнее →</a></footer></article>
+        <article class="course-card" data-level="middle"><span class="course-number">05</span><span class="tag">Средний</span><h3>Практикум с обратной связью</h3><p>Еженедельные разборы работ и созвоны с куратором.</p><footer><strong>21 900 ₽</strong><a class="course-choice" data-course="Практикум с обратной связью" href="#contact">Подробнее →</a></footer></article>
+        <article class="course-card" data-level="advanced"><span class="course-number">06</span><span class="tag">Продвинутый</span><h3>Мастер-класс практиков</h3><p>Углублённые темы и разбор рабочих кейсов индустрии.</p><footer><strong>32 900 ₽</strong><a class="course-choice" data-course="Мастер-класс практиков" href="#contact">Подробнее →</a></footer></article>
+      </div>
+    </section>
+
+    <section class="approach" id="approach"><span class="eyebrow">Подход</span><h2>Не просто смотрите.<br>Создавайте.</h2><div class="steps"><article><b>01</b><h3>Короткая теория</h3><p>Материалы по 15–20 минут без лишней воды.</p></article><article><b>02</b><h3>Практика</h3><p>Задачи, похожие на настоящую работу.</p></article><article><b>03</b><h3>Разбор с ментором</h3><p>Персональные рекомендации по каждой работе.</p></article></div></section>
+
+    <section class="section pricing" id="pricing">
+      <div><span class="eyebrow">Тарифы</span><h2>Удобная оплата</h2><p>Платите помесячно или заберите весь курс со скидкой.</p></div>
+      <div class="pricing-card">
+        <div class="tariff-tabs" role="group" aria-label="Способ оплаты"><button class="tariff-toggle active" data-mode="monthly" type="button" aria-pressed="true">Помесячно</button><button class="tariff-toggle" data-mode="full" type="button" aria-pressed="false">Весь курс</button></div>
+        <div class="price" id="price-value">2 490 ₽</div><p id="price-note">в месяц, доступ к текущему модулю</p><span class="saving" id="saving" hidden>Экономия 15%</span><a class="button full" href="#contact">Выбрать тариф</a>
+      </div>
+    </section>
+
+    <section class="section faq" id="faq"><span class="eyebrow">Вопросы</span><h2>Всё, что важно знать</h2>
+      <div class="faq-list">
+        <article><h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="answer-1">Нужен ли опыт для старта?<span aria-hidden="true">+</span></button></h3><div class="faq-answer" id="answer-1" hidden>Нет. Программы уровня «Новичок» рассчитаны на людей без предыдущего опыта.</div></article>
+        <article><h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="answer-2">Как проходит обучение?<span aria-hidden="true">+</span></button></h3><div class="faq-answer" id="answer-2" hidden>Видео в своём темпе, практические задания и еженедельная обратная связь куратора.</div></article>
+        <article><h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="answer-3">Можно ли вернуть деньги?<span aria-hidden="true">+</span></button></h3><div class="faq-answer" id="answer-3" hidden>В демонстрационной модели предусмотрен возврат в течение 7 дней после старта.</div></article>
+        <article><h3><button class="faq-question" type="button" aria-expanded="false" aria-controls="answer-4">Выдаётся ли сертификат?<span aria-hidden="true">+</span></button></h3><div class="faq-answer" id="answer-4" hidden>После завершения программы ученик получает демонстрационный сертификат.</div></article>
+      </div>
+    </section>
+
+    <section class="contact" id="contact"><div><span class="eyebrow">Начать знакомство</span><h2>Получите бесплатный урок</h2><p>Введите имя — заявка откроется в Telegram, где её можно проверить и отправить.</p><p id="lead-context" aria-live="polite">Курс можно выбрать в каталоге. Тариф: Помесячно.</p></div><form id="lead-form"><label for="lead-name">Ваше имя</label><div class="input-row"><input id="lead-name" name="name" autocomplete="name" required placeholder="Например, Анна"><button type="submit">Перейти в Telegram</button></div></form></section>
+  </main>
+  <footer class="site-footer"><span class="logo">Skillary<span>.</span></span><p>Концепт онлайн-школы</p><a href="https://t.me/brtvd_07">Разработчик в Telegram</a></footer>
+</body>
+</html>
